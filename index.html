@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form With Tailwind CSS</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAB2AAAAdgFOeyYIAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAbxJREFUOI2Vk79rVEEQxz/v5ZkjqDH4ByQipFE0f4JwKCRgHdIIonAoSEStRASbYKVWSTSxsU0CAZs05uzSKRbpjZ1dTCG5ndmdsXg5vfdyJ7qwzA7z/c6vncmon88+RUgtxJqoTyBuqO+h6QPR3zJ3ercXnv1+7fgIw/YStRbiOeogDmpH0kE8ofaaM6MPmc3kj4MdH6GRthC/0gOuk3v1Nj/GZniWSQ5Aw179BxnUmwzvvygz+OSXkfgF8awCDr6L2gKS5Wh6gvqFI3IXk0hxqiCkFloji4PwmMg7YgJNN9HsfQ0zhOa3C8SuEvukGb2B2tlSz44HKPVrBdHP9a85TaJ+i+gB5eKAvkzkAwwLBA6QbBbhBoF9ND3v09ShHLWvNcMaykmiL6E2jfg0MS0TvIH6ejWg7eWItyteO76G2PyxmiP3EVuvZst2gfobxO+gVpZjdgLxOQRICZTyioFagdDN1uj4SjmJqwdLiN+t/fPgQSrlIhvj98pJPBx9gPrHfyfbNj/DI4DSwXwWyMdmEFtGzf5CNtQXOWXX2ZoM1W3snqffL3FIC6WJ2nnEI8o3xNp0fIXN8co6/wJOpNKxu7MHsAAAAABJRU5ErkJggg==" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="./assets/index-869dd18a.css">
+</head>
+<body class="font-ubuntu text-[16px]">
+
+   <header class="bg-blue-700 relative">
+        <div class="container mx-auto w-3/4 py-5 sm:py-2 flex justify-between items-center text-right">
+            <div class="logo">
+                <a href="#" class="text-white uppercase tracking-widest text-2xl font-semibold">
+                    logo
+                </a>
+            </div>
+            <div class="nav_menu">
+                <button id="mobile-menu" class="text-white sm:hidden mt-1 sm:mt-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </button>
+                <nav>
+                    <ul id="main-menu" class="w-full text-white absolute bg-blue-700 top-16 left-0 text-center py-5 hidden sm:block sm:relative sm:top-0 sm:flex sm:py-2">
+                        <li class="my-1 ml-3"><a class="capitalize" href="#">log in</a></li>
+                        <li class="my-1 ml-3"><a class="capitalize" href="#">sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   </header>
+
+   <section class="bg-blue-100 py-14 sm:py-14 sm:h-screen flex items-center">
+    <div class="container mx-auto w-3/4 lg:w-2/4 flex flex-col sm:flex-row sm:items-center">
+        <div class="mb-10 sm:w-1/2 sm:order-2 sm:pl-8">
+            <img src="./assets/login-6ff345c6.svg" alt="" class="w-full">
+        </div>
+        <div class="sm:w-1/2 sm:order-1">
+            <form action="#">
+                <span class="block font-bold text-2xl">Welcome Back</span>
+                <div class="my-3">
+                    <label for="name">Username or Email</label>
+                    <input type="text" name="name" class=" rounded focus:outline-none block mt-2 py-1 px-3">
+                </div>
+                <div class="mt-3">
+                    <label for="pass">Password</label>
+                    <input type="text" name="pass" class="rounded focus:outline-none block mt-2 py-1 px-3">
+                </div>
+                <input type="submit" value="Login" class="bg-blue-700 rounded mt-5 py-2 px-4 text-white cursor-pointer hover:bg-blue-500 transition-all ease-in duration-200">
+            </form>
+            <p class="mt-3">Don't Have An Account ! <a href="#" class="text-blue-700 hover:text-blue-500 transition-all ease-in duration-200">Sign Up</a></p>
+        </div>
+    </div>
+   </section>
+
+
+   
+  <script src="./assets/index-a5d89872.js"></script>
+    
+</body>
+</html>
